@@ -1,0 +1,8 @@
+@charset "utf-8";
+// 请注意各css都放在各模块下，各组件下，各页面下。对于变换效果的字段，抽取变量，变量值在variable中维护
+// utils
+@import "./utils/variables";
+
+// base
+@import "./base/basic";
+
