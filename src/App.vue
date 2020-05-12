@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+      <h1>VUE</h1>
+    <el-button type="success">猜测是</el-button>
     <router-view/>
   </div>
 </template>
 
 <script>
-import '@/assets/styles/app.scss'
+
 export default {
   name: 'App',
   components: {

@@ -1,6 +1,6 @@
 <template>
-    <div :class="$style.login-container">
-        <p >ddd</p>
+    <div :class="$style.loginContainer">
+        <p>ddd</p>
         {{this.$store.state.settings.st}} <br>
         {{this.$store.getters['settings/getSSS']}}
     </div>
@@ -17,7 +17,7 @@
 </script>
 
 <style module>
-p{
-    color:black;
-}
+    .loginContainer {
+        color: green;
+    }
 </style>
