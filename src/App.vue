@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-      <h1>VUE</h1>
-    <el-button type="success">猜测是</el-button>
+    <bubble></bubble>
     <router-view/>
+    <clear-float></clear-float>
   </div>
 </template>
 
 <script>
 
+import Bubble from "@/components/background/bubble";
+import ClearFloat from "@/components/layout/clearFloat";
 export default {
   name: 'App',
   components: {
+    ClearFloat,
+    Bubble
 
   }
 }

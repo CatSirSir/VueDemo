@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import ElmentUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-Vue.use(ElmentUI)
+Vue.use(ElmentUI, { size: 'small'})
 
 import router from "@/router/route";
 import App from './App.vue'

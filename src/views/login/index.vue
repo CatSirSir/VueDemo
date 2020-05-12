@@ -10,7 +10,7 @@
     export default {
         name: "index",
         mounted() {
-            console.log(1);
+
         }
 
     }
