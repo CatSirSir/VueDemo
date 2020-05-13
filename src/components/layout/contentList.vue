@@ -18,9 +18,13 @@
         props: ['curSelect', 'contentList'],
         computed: {
             contents: function () {
-                let ct = this.contentList.filter(item => item.id == this.curSelect)[0].content
-                ct.map((v, i) => v.id = i)
-                return ct
+                if (this.contentList.length > 0) {
+                    let ct = this.contentList.filter(item => item.id == this.curSelect)[0].content
+                    ct.map((v, i) => v.id = i)
+                    return ct
+                } else {
+                    return []
+                }
             }
         },
     }
