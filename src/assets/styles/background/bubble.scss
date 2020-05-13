@@ -25,7 +25,7 @@ body{
     // 默认的气泡大小；
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.4);
     list-style: none;
     // 使用自定义动画使气泡渐现、上升和翻滚；
     animation: square 13s infinite;
@@ -39,7 +39,7 @@ body{
       width: 90px;
       height: 90px;
       animation-delay: 2s;
-      animation-duration: 7s;
+      animation-duration: 3s;
     }
     &:nth-child(3) {
       left: 25%;
@@ -49,7 +49,7 @@ body{
       left: 40%;
       width: 60px;
       height: 60px;
-      animation-duration: 6s;
+      animation-duration: 2s;
       background-color: rgba(255, 255, 255, 0.3);
     }
     &:nth-child(5) {
@@ -73,14 +73,14 @@ body{
       width: 20px;
       height: 20px;
       animation-delay: 4s;
-      animation-duration: 15s;
+      animation-duration: 1s;
     }
     &:nth-child(9) {
       left: 25%;
       width: 10px;
       height: 10px;
       animation-delay: 2s;
-      animation-duration: 12s;
+      animation-duration: 1s;
       background-color: rgba(255, 255, 255, 0.3);
     }
     &:nth-child(10) {
@@ -93,11 +93,11 @@ body{
   // 自定义 square 动画；
   @keyframes square {
     0% {
-      opacity: 1;
+      opacity: 0.4;
       transform: translateY(0px) rotate(0deg);
     }
     100% {
-      opacity: 0;
+      opacity: 0.2;
       transform: translateY(-700px) rotate(360deg);
     }
   }

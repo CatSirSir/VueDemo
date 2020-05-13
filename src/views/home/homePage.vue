@@ -8,7 +8,6 @@
 <script>
     import asideNav from "@/components/layout/asideNav";
     import contentList from "@/components/layout/contentList";
-    import axios from 'axios'
 
     export default {
         name: "homePage",
@@ -19,7 +18,7 @@
             }
         },
         created(){
-            axios.get('/163.json').then(rs => {
+            this.$api.musicContent.ListContents().then(rs => {
                 this.contentList = rs.data;
             }).catch(function(e){
                 console.log(e)

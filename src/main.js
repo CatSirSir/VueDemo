@@ -7,9 +7,11 @@ import router from "@/router/route";
 import App from './App.vue'
 import store from "@/store/store";
 import '@/assets/styles/app.scss'
+import api from "@/api/api";
 
 Vue.config.productionTip = false
-
+//接口挂载到Vue的原型上
+Vue.prototype.$api=api
 
 
 new Vue({
