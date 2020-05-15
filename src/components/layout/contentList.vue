@@ -32,8 +32,10 @@
 
 <style module>
     .contentClass {
-        width: 68%;
+        width: 74%;
         float: left;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .contentClass li {

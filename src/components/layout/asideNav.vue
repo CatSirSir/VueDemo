@@ -27,8 +27,9 @@
 
 <style module>
     .menuListCls {
-        width: 23%;
+        width: 20%;
         float: left;
+        padding-left: 2%;
     }
     /*强制修改本组件下element-ui的tag样式*/
     .menuListCls span{

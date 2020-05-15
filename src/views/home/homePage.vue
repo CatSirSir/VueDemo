@@ -2,16 +2,17 @@
     <div>
         <aside-nav :asideNames="contentList" @selectItem="selectItem"></aside-nav>
         <content-list :contentList="contentList" :curSelect="curSelect"></content-list>
+        <clear-float></clear-float>
     </div>
 </template>
 
 <script>
     import asideNav from "@/components/layout/asideNav";
     import contentList from "@/components/layout/contentList";
-
+    import clearFloat from "@/components/layout/clearFloat";
     export default {
         name: "homePage",
-        components: {contentList, asideNav},
+        components: {contentList, asideNav,clearFloat},
         methods: {
             selectItem: function (val) {
                 this.curSelect = val;
