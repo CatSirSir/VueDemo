@@ -11,7 +11,7 @@ const actions = {
 
 };
 const getters = {
-    getSSS: (state) => {
+    getSt: (state) => {
         return state.st + 1 + 'getter';
     }
 }

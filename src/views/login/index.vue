@@ -1,8 +1,8 @@
 <template>
-    <div :class="$style.loginContainer">
+    <div :class="$style.loginContainer" @click="ckEvent">
         <p>ddd</p>
         {{this.$store.state.settings.st}} <br>
-        {{this.$store.getters['settings/getSSS']}}
+        {{this.$store.getters['settings/getSt']}}
     </div>
 </template>
 
@@ -11,6 +11,11 @@
         name: "index",
         mounted() {
 
+        },
+        methods:{
+            ckEvent(){
+                this.$store.commit('settings/increment');
+            }
         }
 
     }

@@ -8,7 +8,7 @@ import axiosIns from '@/request/http'; // 导入http中创建的axios实例
 const musicContent = {
     // 新闻列表
     ListContents () {
-        return axiosIns.get(`${base.local}/163.json`);
+        return axiosIns.get(`${base.backend}/163.json`);
     }
     // 其他接口…………
 }
