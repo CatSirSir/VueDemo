@@ -1,18 +1,16 @@
 const state = {
-    st: 1
+  st: 1
 };
 const mutations = {
-    increment : (state)=>{
-        state.st += 1;
-    }
+  increment: state => {
+    state.st += 1;
+  }
 };
 //异步访问
-const actions = {
-
-};
+const actions = {};
 const getters = {
-    getSt: (state) => {
-        return state.st + 1 + 'getter';
-    }
-}
-export default {namespaced: true, state, mutations, actions,getters};
+  getSt: state => {
+    return state.st + 1 + "getter";
+  }
+};
+export default { namespaced: true, state, mutations, actions, getters };

@@ -1,17 +1,15 @@
 <template>
-    <div :class="$style.clearDiv">
-
-    </div>
+  <div :class="$style.clearDiv"></div>
 </template>
 
 <script>
-    export default {
-        name: "clearFloat"
-    }
+export default {
+  name: "clearFloat"
+};
 </script>
 
 <style module>
-.clearDiv{
-    clear:both;
+.clearDiv {
+  clear: both;
 }
 </style>
